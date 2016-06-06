@@ -5,7 +5,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
-#递归计算左子书和右子树的深度 DFS
+#递归分别计算左子树和右子树的深度 DFS
 class Solution(object):
     def maxDepth(self, root):
         """
