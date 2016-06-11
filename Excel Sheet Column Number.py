@@ -11,4 +11,4 @@ class Solution(object):
         	
        	return res
 s = Solution()
-print(s.titleToNumber("ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"))
+print(s.titleToNumber("ZZZZZ"))
