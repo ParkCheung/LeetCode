@@ -11,8 +11,8 @@ class Solution(object):
         return res
 
 #debug
-nums1 = [1,2,3,4]
-nums2 = [1,3]
+nums1 = [1, 2, 3, 4]
+nums2 = [1, 3]
 
-s = Solution();
-print(s.intersection(nums1,nums2))
+s = Solution()
+print(s.intersection(nums1, nums2))

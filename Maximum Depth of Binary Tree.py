@@ -1,3 +1,4 @@
+# coding=utf-8
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
@@ -15,7 +16,8 @@ class Solution(object):
         if root is None:
             return 0
         else:
-            return max(self.maxDepth(root.left),self.maxDepth(root.right))+1
+            return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
+
 #debug
 root = TreeNode(1)
 root.left = TreeNode(2)

@@ -1,5 +1,4 @@
 class Solution():
-
     def reverse(self, x):
         """
         :type x: int
@@ -13,7 +12,8 @@ class Solution():
         strx = str(abs(x))
         r = int(strx[::-1])
 
-        return sign * r if r < (1<<31)-1 else 0
-#debug
+        return sign * r if r < (1 << 31) - 1 else 0
+
+    #debug
 s = Solution()
 print(s.reverse(-2147483641))

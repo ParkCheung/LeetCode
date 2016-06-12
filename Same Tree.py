@@ -1,6 +1,6 @@
+# coding=utf-8
 # Definition for a binary tree node.
 class TreeNode(object):
-
     def __init__(self, x):
         self.val = x
         self.left = None
@@ -8,7 +8,6 @@ class TreeNode(object):
 
 
 class Solution(object):
-
     def isSameTree(self, p, q):
         """
         :type p: TreeNode
@@ -29,7 +28,7 @@ class Solution(object):
         # 先比较左子树 如果False 直接返回不再比较右子树
         if not self.isSameTree(p.left, q.left):
             return False
-        # 再比较右子树
+            # 再比较右子树
         return self.isSameTree(p.right, q.right)
 
 

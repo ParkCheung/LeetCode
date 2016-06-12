@@ -1,5 +1,4 @@
 class Solution():
-
     def reverseString(self, s):
         """
         :type x: str

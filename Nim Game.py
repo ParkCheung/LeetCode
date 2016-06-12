@@ -5,6 +5,7 @@ class Solution(object):
         :rtype: bool
         """
         return n % 4 != 0
-#debug
+
+    #debug
 s = Solution()
 print (s.canWinNim(10))

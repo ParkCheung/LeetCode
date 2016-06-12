@@ -6,12 +6,13 @@ class Solution(object):
         """
         size = len(nums)
         if size == 1:
-        	return nums[0]
-        half = size/2
+            return nums[0]
+        half = size / 2
 
         for num in set(nums):
-        	if nums.count(num) > half:
-        		return num
+            if nums.count(num) > half:
+                return num
+
 
 s = Solution()
-print(s.majorityElement([1,2,1,1,2]))
+print(s.majorityElement([1, 2, 1, 1, 2]))

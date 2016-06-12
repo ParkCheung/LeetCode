@@ -5,6 +5,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Solution(object):
     def invertTree(self, root):
         """
@@ -13,14 +14,14 @@ class Solution(object):
         """
         if root is None:
             return root
-            
-        if root.left != None:
-        	self.invertTree(root.left)
-       	if root.right != None:
-       		self.invertTree(root.right)
 
-       	if root.left != root.right:
-       		root.left,root.right = root.right,root.left
+        if root.left is not None:
+            self.invertTree(root.left)
+        if root.right is not None:
+            self.invertTree(root.right)
 
-       	return root;
+        if root.left != root.right:
+            root.left, root.right = root.right, root.left
+
+        return root
 

@@ -1,5 +1,5 @@
+# coding=utf-8
 class Solution(object):
-
     def moveZeroes(self, nums):
         """
         :type nums: List[int]
@@ -20,6 +20,7 @@ class Solution(object):
 
         #提交时不需要return
         return nums
+
 
 s = Solution()
 print(s.moveZeroes([1, 0, 1, 0, 3, 12]))

@@ -1,5 +1,5 @@
+# coding=utf-8
 class Solution(object):
-
     def isAnagram(self, s, t):
         """
         :type s: str
@@ -8,20 +8,21 @@ class Solution(object):
         """
 
         if len(s) != len(t):
-        	return False
+            return False
 
         #记录已经统计过的字符，避免重复统计
-       	found = []
+        found = []
         for i in range(len(s)):
-        	if s[i] in found:
-        		continue
+            if s[i] in found:
+                continue
 
-        	if s.count(s[i]) != t.count(s[i]):
-        		return False
-        		
-        	found.append(s[i])
+            if s.count(s[i]) != t.count(s[i]):
+                return False
+
+            found.append(s[i])
 
         return True
+
 
 s = Solution()
 print(s.isAnagram("abbddc", "abbddc"))
