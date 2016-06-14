@@ -25,4 +25,4 @@ class Solution(object):
 
 
 s = Solution()
-print(s.isAnagram("abbddc", "abbddc"))
+print(s.isAnagram("abbdda", "abbddc"))
