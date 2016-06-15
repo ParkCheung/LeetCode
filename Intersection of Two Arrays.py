@@ -1,4 +1,5 @@
 class Solution(object):
+
     def intersection(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -10,8 +11,8 @@ class Solution(object):
             res = list(set(nums1).intersection(set(nums2)))
         return res
 
-#debug
-nums1 = [1, 2, 3, 4]
+# debug
+nums1 = [1, 2, 3, 3, 4]
 nums2 = [1, 3]
 
 s = Solution()
