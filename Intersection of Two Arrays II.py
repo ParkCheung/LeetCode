@@ -6,18 +6,19 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
-        res = []
-        if len(nums2) < len(nums1):
-            nums1, nums2 = nums2, nums1
 
-        for i in range(len(nums1)):
-            if nums1[i] in nums2:
-                res.append(nums1[i])
-
-        return res
-# debug
-nums1 = [1, 2,  3, 4]
-nums2 = [1, 3, 3]
+        res = []; dictionary = {}
+        for num in nums1:
+            if not num in dictionary:
+                dictionary[num] = 1
+            else:
+                dictionary[num] += 1
+        for num in nums2:
+            if num in dictionary and dictionary[num] > 0:
+                dictionary[num] -= 1
+                res.append(num)
+        return res;
 
 s = Solution()
-print(s.intersect(nums1, nums2))
+print(s.intersect([1, 3, 3], [1, 3]))
+
