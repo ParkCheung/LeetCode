@@ -1,13 +1,12 @@
 class Solution(object):
-
     def intersect(self, nums1, nums2):
         """
         :type nums1: List[int]
         :type nums2: List[int]
         :rtype: List[int]
         """
-
-        res = []; dictionary = {}
+        res = []
+        dictionary = {}
         for num in nums1:
             if not num in dictionary:
                 dictionary[num] = 1
